@@ -275,12 +275,12 @@ components:
       description: AsyncAPI document in JSON or YAML.
       oneOf:
         - type: string # can be in YAML format
-        - $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.0.0.json
-        - $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.1.0.json
-        - $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.2.0.json
-        - $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.3.0.json
-        - $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.4.0.json
-        - $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.5.0.json
+        - $ref: https://asyncapi.com/schema-store/2.0.0.json
+        - $ref: https://asyncapi.com/schema-store/2.1.0.json
+        - $ref: https://asyncapi.com/schema-store/2.2.0.json
+        - $ref: https://asyncapi.com/schema-store/2.3.0.json
+        - $ref: https://asyncapi.com/schema-store/2.4.0.json
+        - $ref: https://asyncapi.com/schema-store/2.5.0.json
     AsyncAPIDocuments:
       type: array
       description: AsyncAPI documents in JSON or YAML.
@@ -290,12 +290,7 @@ components:
     SpecVersions:
       type: string
       description: Valid specification versions for the AsyncAPI document.
-      enum:
-        - '1.0.0'
-        - '1.1.0'
-        - '1.2.0'
-        - '2.0.0-rc1'
-        - '2.0.0-rc2'
+      enum:      
         - '2.0.0'
         - '2.1.0'
         - '2.2.0'
